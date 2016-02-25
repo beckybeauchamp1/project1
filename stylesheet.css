@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  background-color: #c5c6b6;
+}
+
+header {
+  margin-top: -35px; /* How do you do this without using a negative value? */
+  background-color: #3c3530;
+}
+
+h1 {
+  padding: 50px;
+  text-align: center;
+  font-family: helvetica;
+  font-size: 300%;
+  color: #ffffff;
+}
+
+.questions {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  height:75px;
+  max-width: 500px;
+  border: 5px solid #3c3530;
+  border-radius: 20px;
+  background: #ffffff;
+  text-align: center;
+  font-family: helvetica;
+}
+
+section {
+  padding-top: 20px;
+  font-family: helvetica;
+  font-size: large;
+}
+
+.answer {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 10px;
+  height:75px;
+  width: 500px;
+  border-radius: 20px;
+  display: block;
+  font-family: helvetica;
+  font-size: medium;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.answer:hover {
+  background: #eef1bb;
+}
+
+.playOption {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 100px;
+  border-radius: 20px;
+  font-size: large;
+  font-weight: bold;
+  padding: 5px 10px 5px 10px;
+  color: #ffffff;
+  font-family: helvetica;
+  background: #2c416b;
+  cursor: pointer;
+}
