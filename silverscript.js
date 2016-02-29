@@ -1,4 +1,17 @@
 var game = {
+
+  // It might have be easier to have only one array of trivia objects including both the question, answer, and row choices.
+  // For example:
+
+ //   triviaQuestions:[
+ //     {
+ //       question: "Who was the first person to walk on the moon?",
+ //       answer: "Neil Armstrong",
+ //       row1: "Louis Armstrong",
+ //       row2: "Neil Armstrong",
+ //       row3: "Lance Armstrong"
+ //     }
+ // ]
   triviaQuestions:
   [ "Who was the first person to walk on the moon?",
     "How many bones are in a giraffe's neck?",
@@ -32,12 +45,13 @@ var game = {
 
   restart: document.querySelector( "#restartButton" ),
 
+
   addQuestion: function() {
     var questionsBox = document.querySelector( ".questions section" );
     var questionsText = this.triviaQuestions[this.index];
     questionsBox.innerHTML = questionsText;
   },
-
+  // These functions look very similar. Could you think of a way to combine these into one?
   addAnswersRowOne: function() {
     var answerText = this.triviaAnswersRowOne[this.index];
     this.optionOne.innerHTML = answerText;
@@ -55,6 +69,15 @@ var game = {
 
   answerClick: function() {
     var self = this;
+    // I think you should combine these in one callback funtion with the event listener. For example:
+
+//      for (var i = 0; i < this.playerPick.length; i++) {
+//          self.playerPick[i].addEventListener("click", function() {
+//            self.chosenAnswers.push(this.innerHTML);
+//            self.index++;
+//            self.nextQuestion();
+//   });
+// }
     for (var i = 0; i < this.playerPick.length; i++) {
       this.playerPick[i].addEventListener( "click", function() {
         self.chosenAnswers.push(this.innerHTML); //Pushes player answer to chosenAnswers array

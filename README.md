@@ -4,6 +4,7 @@ Answer 10 questions sequentially
 Player will select one of three possible correct answers
 After completing the quiz, app will display how many questions were answered correctly.
 
+<!--I really like that you laid out your Bronze, Silver, and Gold!  -->
 Bronze:
 
 List all 10 Questions on a single page
@@ -25,6 +26,10 @@ If Player selects incorrect answer, change selected answer button to "red"
 Player clicks on 'Next' button to move to next question
 Add timer for each question
 Show score (out of 10) after last question
+
+
+<!-- I know we didn't go over these in class, but a user story syntax should like look the following:
+  As a <type of user>, I want <some goal> so that <some reason>  -->
 
 User Stories:
 

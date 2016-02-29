@@ -1,10 +1,12 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   background-color: #c5c6b6;
 }
 
 header {
-  margin-top: -35px; /* How do you do this without using a negative value? */
+  /*I'm not exactly sure wha */
+  margin: 0 auto;
+  /*margin-top: -35px; /* How do you do this without using a negative value? */*/
   background-color: #3c3530;
 }
 
