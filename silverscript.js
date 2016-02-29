@@ -52,6 +52,25 @@ var game = {
     questionsBox.innerHTML = questionsText;
   },
   // These functions look very similar. Could you think of a way to combine these into one?
+
+  //   triviaQuestions:[
+  //     {
+  //       question: "Who was the first person to walk on the moon?",
+  //       answer: "Neil Armstrong",
+  //       row1: "Louis Armstrong",
+  //       row2: "Neil Armstrong",
+  //       row3: "Lance Armstrong"
+  //     }
+  // ]
+  // addAnswers: function(){
+  //   var rowOne = this.triviaQuestions[this.index].row1
+  //   var rowTwo = this.triviaQuestions[this.index].row2
+  //   var rowThree = this.triviaQuestions[this.index].row3
+  //
+  //   this.optionOne.innerHTML = rowOne;
+  //   this.optionOne.innerHTML = rowTwo;
+  //   this.optionOne.innerHTML = rowThree;
+  // },
   addAnswersRowOne: function() {
     var answerText = this.triviaAnswersRowOne[this.index];
     this.optionOne.innerHTML = answerText;
