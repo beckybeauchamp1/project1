@@ -28,7 +28,7 @@ Add timer for each question
 Show score (out of 10) after last question
 
 
-<!-- I know we didn't go over these in class, but a user story syntax should like look the following:
+<!-- I know we didn't go over these in class before, but a user story syntax could model the following:
   As a <type of user>, I want <some goal> so that <some reason>  -->
 
 User Stories:
