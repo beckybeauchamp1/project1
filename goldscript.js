@@ -1,4 +1,21 @@
 var game = {
+ triviaQuestions2:[
+        {
+          question: "Who was the first person to walk on the moon?",
+          answer: "Neil Armstrong",
+          row1: "Louis Armstrong",
+          row2: "Neil Armstrong",
+          row3: "Lance Armstrong"
+        }
+    ],
+      addAnswers2: function(){
+        var rowOne = this.triviaQuestions2[this.index].row1
+        var rowTwo = this.triviaQuestions2[this.index].row2
+        var rowThree = this.triviaQuestions2[this.index].row3
+        this.optionOne.innerHTML = rowOne;
+        this.optionOne.innerHTML = rowTwo;
+        this.optionOne.innerHTML = rowThree;
+      },
   triviaQuestions:
   [ "Who was the first person to walk on the moon?",
     "How many bones are in a giraffe's neck?",
@@ -86,7 +103,7 @@ var game = {
   },
 
   nextButton: function () {
-    this.next.addEventListener( "click", function() {
+    this.addEventListener( "click", function() {
       this.nextQuestion();
     }); //Takes player to next question using 'Next' button
   },
@@ -94,9 +111,10 @@ var game = {
   nextQuestion: function() {
     if (this.index <= 9) {
       this.addQuestion();
-      this.addAnswersRowOne();
-      this.addAnswersRowTwo();
-      this.addAnswersRowThree();
+      // this.addAnswersRowOne();
+      // this.addAnswersRowTwo();
+      // this.addAnswersRowThree();
+      this.addAnswers2()
     }
     this.showScore();
   },
